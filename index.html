@@ -81,24 +81,38 @@
                             <div class="item featured text-center">
 
                                 <div class="featured-image has-ribbon">
-                                    <a href="assets/images/projects/sidompul.webp">
+                                    <a href="assets/images/projects/styles.png">
                                         <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/sidompul.webp" alt="project name" />
+                                            src="assets/images/projects/styles.png" alt="project name" />
                                     </a>
                                     <div class="ribbon">
                                         <div class="text">New</div>
                                     </div>
                                 </div>
 
-                                <h3 class="title mb-3"><a href="https://play.google.com/store/apps/details?id=com.toko.xl&hl=en&gl=US" target="_blank">SiDOMPUL</a>
+                                <h3 class="title mb-3"><a href="#" onclick="DetectMobilePhone()" target="_blank">Styles</a>
                                 </h3>
 
                                 <div class="desc text-left">
-                                    <p>XL Axiata retailer application for Dompul users, to sell credit, data & claim prizes</p>
+                                    <p>STYLES is the first reward application in Indonesia that is integrated with more than 50 Lippo Malls in 40 cities in Indonesia.
+                                        This application aims to give appreciation to loyal Lippo Malls Indonesia customers to get Styles points by shopping at Lippo Malls and exchanging points that have been collected for various vouchers, attractive merchandise and exclusive discounts from tenants and Lippo Malls partners.</p>
                                 </div>
                                 <!--//desc-->
 
                             </div>
+                             <!--//item-->
+                             <hr class="divider" />
+                             <div class="item row">
+                                 <a class="col-md-4 col-12" href="assets/images/projects/sidompul.webp">
+                                     <img class="img-fluid project-image rounded shadow-sm"
+                                         src="assets/images/projects/sidompul.webp" alt="project name" />
+                                 </a>
+                                 <div class="desc col-md-8 col-12">
+                                     <h3 class="title"><a href="https://play.google.com/store/apps/details?id=com.toko.xl&hl=en&gl=US" target="_blank">SiDOMPUL</a></h3>
+                                     <p class="mb-2">XL Axiata retailer application for Dompul users, to sell credit, data & claim prizes</p>
+                                 </div>
+                                 <!--//desc-->
+                             </div>
                             <!--//item-->
                             <hr class="divider" />
                             <div class="item row">
@@ -254,7 +268,17 @@
                         <div class="content">
 
                             <div class="skillset">
-
+                                <div class="item">
+                                    <h3 class="level-title">React Native<span class="level-label" data-toggle="tooltip"
+                                            data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."></span>
+                                    </h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="100%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
                                 <div class="item">
                                     <h3 class="level-title">Kotlin<span class="level-label" data-toggle="tooltip"
                                             data-placement="left" data-animation="true"
@@ -295,7 +319,7 @@
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">PHP, Javascript, jQuery<span class="level-label"
+                                    <h3 class="level-title">PHP, HTML, Javascript, jQuery<span class="level-label"
                                             data-toggle="tooltip" data-placement="left" data-animation="true"
                                             title="You can use the tooltip to explain more about your skill level..."></span>
                                     </h3>
@@ -340,12 +364,11 @@
         <!--//row-->
     </div>
     <!--//masonry-->
-
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
             <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright"><a href="https://andikamar.github.io/portofolio/" target="_blank">2022 | andikamar</a></small>
+            <small class="copyright"><a href="https://andikamar.github.io/portofolio/" target="_blank">2024 | andikamar</a></small>
         </div>
         <!--//container-->
     </footer>
@@ -363,6 +386,17 @@
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        function DetectMobilePhone(){
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        if (userAgent.includes("Android")) {
+            window.location.replace("https://play.google.com/store/apps/details?id=com.lippomalls.styles");
+        } else if (userAgent.includes("iPhone")) {
+            window.location.replace("https://apps.apple.com/id/app/styles-lippo-malls/id1450646539");
+        }
+        }
+    </script>
 </body>
 
 </html>
