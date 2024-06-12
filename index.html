@@ -81,7 +81,7 @@
                             <div class="item featured text-center">
 
                                 <div class="featured-image has-ribbon">
-                                    <a href="assets/images/projects/styles.png">
+                                    <a href="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a0/fc/10/a0fc10ff-b47b-f62e-1244-b9727e4f848e/AppIcon-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp">
                                         <img class="img-fluid project-image rounded shadow-sm"
                                             src="assets/images/projects/styles.png" alt="project name" />
                                     </a>
@@ -90,17 +90,31 @@
                                     </div>
                                 </div>
 
-                                <h3 class="title mb-3"><a href="#" onclick="DetectMobilePhone()" target="_blank">Styles</a>
+                                <h3 class="title mb-3"><a href="#" onclick="DetectMobilePhoneBsatu()" target="_blank">BeritaSatu</a>
                                 </h3>
 
                                 <div class="desc text-left">
-                                    <p>STYLES is the first reward application in Indonesia that is integrated with more than 50 Lippo Malls in 40 cities in Indonesia.
-                                        This application aims to give appreciation to loyal Lippo Malls Indonesia customers to get Styles points by shopping at Lippo Malls and exchanging points that have been collected for various vouchers, attractive merchandise and exclusive discounts from tenants and Lippo Malls partners.</p>
+                                    <p>BeritaSatu.com is an Indonesian news app that provides the latest, most in-depth, accurate, reliable and up-to-date news stories.</p>
                                 </div>
                                 <!--//desc-->
 
                             </div>
                              <!--//item-->
+                             <hr class="divider" />
+                             <div class="item row">
+                                 <a class="col-md-4 col-12" href="assets/images/projects/styles.png">
+                                     <img class="img-fluid project-image rounded shadow-sm"
+                                         src="assets/images/projects/styles.png" alt="project name" />
+                                 </a>
+                                 <div class="desc col-md-8 col-12">
+                                     <h3 class="title mb-3"><a href="#" onclick="DetectMobilePhone()" target="_blank">Styles</a>
+                                     </h3>
+                                     <p class="mb-2">STYLES is the first reward application in Indonesia that is integrated with more than 50 Lippo Malls in 40 cities in Indonesia.
+                                        This application aims to give appreciation to loyal Lippo Malls Indonesia customers to get Styles points by shopping at Lippo Malls and exchanging points that have been collected for various vouchers, attractive merchandise and exclusive discounts from tenants and Lippo Malls partners.</p>
+                                </div>
+                                 <!--//desc-->
+                             </div>
+                            <!--//item-->
                              <hr class="divider" />
                              <div class="item row">
                                  <a class="col-md-4 col-12" href="assets/images/projects/sidompul.webp">
@@ -387,6 +401,15 @@
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
+        function DetectMobilePhoneBsatu(){
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        if (userAgent.includes("Android")) {
+            window.location.replace("https://play.google.com/store/apps/details?id=com.beritasatu");
+        } else if (userAgent.includes("iPhone")) {
+            window.location.replace("https://apps.apple.com/id/app/beritasatu/id726879438");
+        }
+        }
         function DetectMobilePhone(){
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
         
