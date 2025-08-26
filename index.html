@@ -2,436 +2,619 @@
 <html lang="en">
 
 <head>
-    <title>My Portofolio</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolioku">
-    <meta name="author" content="">
-    <link rel="shortcut icon"
-        href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0zOTQuMDA3LDUwMmgtMzY0Yy0xMS4wNDYsMC0yMC04Ljk1NC0yMC0yMFYzMGMwLTExLjA0Niw4Ljk1NC0yMCwyMC0yMGgzNjRjMTEuMDQ2LDAsMjAsOC45NTQsMjAsMjANCgl2NDUyQzQxNC4wMDcsNDkzLjA0Niw0MDUuMDUzLDUwMiwzOTQuMDA3LDUwMnoiLz4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZFNjY2MzsiIGN4PSIyMTIuMDEiIGN5PSIxNDYiIHI9IjgyIi8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkZDREFDOyIgZD0iTTIzOC4wMDcsMTM1LjV2Ni41YzAsMTQuMzU5LTExLjY0MSwyNi0yNiwyNmwwLDBsMCwwYy0xNC4zNTksMC0yNi0xMS42NDEtMjYtMjZ2LTYuNQ0KCWMwLTE0LjM1OSwxMS42NDEtMjYsMjYtMjZsMCwwQzIyNi4zNjYsMTA5LjUsMjM4LjAwNywxMjEuMTQxLDIzOC4wMDcsMTM1LjV6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojQTVEREZGOyIgZD0iTTIxMi4wMDcsMTY4TDIxMi4wMDcsMTY4Yy0yNS4zOCwwLTQ3LjA2NCwxNS43NjctNTUuODMyLDM4LjAzMw0KCUMxNzAuODE1LDIxOS42NTUsMTkwLjQzMiwyMjgsMjEyLjAwNywyMjhzNDEuMTkyLTguMzQ1LDU1LjgzMi0yMS45NjdDMjU5LjA3MSwxODMuNzY3LDIzNy4zODcsMTY4LDIxMi4wMDcsMTY4eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQkM1MzsiIGQ9Ik00MzYuNTc0LDE2MC41OWw1LjcxNC05Ljg5N2M4LjgzNy0xNS4zMDUsMjguNDA3LTIwLjU0OSw0My43MTMtMTEuNzEzbDAsMA0KCWMxNS4zMDUsOC44MzcsMjAuNTQ5LDI4LjQwNywxMS43MTMsNDMuNzEzTDM3MS44NzMsNDAwLjY1NmwtNTUuNDI2LTMybDU0LjI4Mi05NC4wMkw0MzYuNTc0LDE2MC41OXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRTY2NjM7IiBkPSJNNDg2LjAwMiwxMzguOThMNDg2LjAwMiwxMzguOThjLTE1LjMwNS04LjgzNy0zNC44NzYtMy41OTMtNDMuNzEzLDExLjcxM2wtMTQuODU3LDI1LjczM2w1NS40MjYsMzINCglsMTQuODU3LTI1LjczM0M1MDYuNTUxLDE2Ny4zODgsNTAxLjMwNywxNDcuODE3LDQ4Ni4wMDIsMTM4Ljk4eiIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzlBRDhGRjsiIHBvaW50cz0iMzcxLjg3Myw0MDAuNjU2IDMwNy41ODksNDQ4IDMxNi40NDcsMzY4LjY1NiAiLz4NCjxwYXRoIGQ9Ik00MTQuMDA3LDM5OC4zMjhjLTUuNTIyLDAtMTAsNC40NzctMTAsMTBWNDgyYzAsNS41MTQtNC40ODYsMTAtMTAsMTBoLTM2NGMtNS41MTQsMC0xMC00LjQ4Ni0xMC0xMFYzMA0KCWMwLTUuNTE0LDQuNDg2LTEwLDEwLTEwaDM2NGM1LjUxNCwwLDEwLDQuNDg2LDEwLDEwdjEwOC43NWMwLDUuNTIzLDQuNDc4LDEwLDEwLDEwczEwLTQuNDc3LDEwLTEwVjMwYzAtMTYuNTQyLTEzLjQ1OC0zMC0zMC0zMA0KCWgtMzY0Yy0xNi41NDIsMC0zMCwxMy40NTgtMzAsMzB2NDUyYzAsMTYuNTQyLDEzLjQ1OCwzMCwzMCwzMGgzNjRjMTYuNTQyLDAsMzAtMTMuNDU4LDMwLTMwdi03My42NzINCglDNDI0LjAwNyw0MDIuODA1LDQxOS41MjksMzk4LjMyOCw0MTQuMDA3LDM5OC4zMjh6Ii8+DQo8cGF0aCBkPSJNMzA0LjAwNywxNDZjMC01MC43MjktNDEuMjcxLTkyLTkyLTkycy05Miw0MS4yNzEtOTIsOTJjMCwyNi4zMTcsMTEuMTEsNTAuMDg1LDI4Ljg4Miw2Ni44NjkNCgljMC4zMzMsMC4zNTYsMC42ODcsMC42OTMsMS4wNzQsMWMxNi4zNzEsMTQuOTc5LDM4LjE1OCwyNC4xMyw2Mi4wNDMsMjQuMTNzNDUuNjcyLTkuMTUyLDYyLjA0My0yNC4xMw0KCWMwLjM4Ny0wLjMwNywwLjc0MS0wLjY0NSwxLjA3NC0xQzI5Mi44OTcsMTk2LjA4NSwzMDQuMDA3LDE3Mi4zMTcsMzA0LjAwNywxNDZ6IE0yMTIuMDA3LDc0YzM5LjcwMSwwLDcyLDMyLjI5OSw3Miw3Mg0KCWMwLDE1Ljk2Ny01LjIzMSwzMC43My0xNC4wNiw0Mi42ODNjLTcuMzc1LTEwLjkzOC0xNy41OTYtMTkuNDQ1LTI5LjQ2My0yNC42OTdjNC43MS02LjA4Nyw3LjUyMy0xMy43MTIsNy41MjMtMjEuOTg2di02LjUNCgljMC0xOS44NTEtMTYuMTQ5LTM2LTM2LTM2cy0zNiwxNi4xNDktMzYsMzZ2Ni41YzAsOC4yNzQsMi44MTMsMTUuODk5LDcuNTIzLDIxLjk4NmMtMTEuODY3LDUuMjUyLTIyLjA4OCwxMy43NTktMjkuNDYzLDI0LjY5Nw0KCWMtOC44MjktMTEuOTUzLTE0LjA2LTI2LjcxNi0xNC4wNi00Mi42ODNDMTQwLjAwNywxMDYuMjk5LDE3Mi4zMDYsNzQsMjEyLjAwNyw3NHogTTE5Ni4wMDcsMTQydi02LjVjMC04LjgyMiw3LjE3OC0xNiwxNi0xNg0KCXMxNiw3LjE3OCwxNiwxNnY2LjVjMCw4LjgyMi03LjE3OCwxNi0xNiwxNlMxOTYuMDA3LDE1MC44MjIsMTk2LjAwNywxNDJ6IE0xNjguNTE2LDIwMy4zMzINCgljOC43ODktMTUuNTg1LDI1LjE5LTI1LjMzMiw0My40OTEtMjUuMzMyczM0LjcwMiw5Ljc0Nyw0My40OTEsMjUuMzMyQzI0My40MDUsMjEyLjUyOCwyMjguMzM2LDIxOCwyMTIuMDA3LDIxOA0KCVMxODAuNjA4LDIxMi41MjgsMTY4LjUxNiwyMDMuMzMyeiIvPg0KPHBhdGggZD0iTTI2Ni4wMDcsNDM4aC01NGMtNS41MjIsMC0xMCw0LjQ3Ny0xMCwxMHM0LjQ3OCwxMCwxMCwxMGg1NGM1LjUyMiwwLDEwLTQuNDc3LDEwLTEwUzI3MS41MjksNDM4LDI2Ni4wMDcsNDM4eiIvPg0KPHBhdGggZD0iTTI2Ni4wMDcsMzgyaC0xNDJjLTUuNTIyLDAtMTAsNC40NzctMTAsMTBzNC40NzgsMTAsMTAsMTBoMTQyYzUuNTIyLDAsMTAtNC40NzcsMTAtMTBTMjcxLjUyOSwzODIsMjY2LjAwNywzODJ6Ii8+DQo8cGF0aCBkPSJNMjY2LjAwNywzMjZoLTE0MmMtNS41MjIsMC0xMCw0LjQ3Ny0xMCwxMHM0LjQ3OCwxMCwxMCwxMGgxNDJjNS41MjIsMCwxMC00LjQ3NywxMC0xMFMyNzEuNTI5LDMyNiwyNjYuMDA3LDMyNnoiLz4NCjxwYXRoIGQ9Ik04OC4zNjYsMjcyLjkzYy0xLjg1OS0xLjg2LTQuNDM5LTIuOTMtNy4wNzktMi45M2MtMi42MzEsMC01LjIxMSwxLjA3LTcuMDcsMi45M2MtMS44NiwxLjg2LTIuOTMsNC40NC0yLjkzLDcuMDcNCglzMS4wNjksNS4yMSwyLjkzLDcuMDdjMS44NywxLjg2LDQuNDM5LDIuOTMsNy4wNywyLjkzYzIuNjQsMCw1LjIxLTEuMDcsNy4wNzktMi45M2MxLjg2LTEuODYsMi45MzEtNC40NCwyLjkzMS03LjA3DQoJUzkwLjIyNywyNzQuNzksODguMzY2LDI3Mi45M3oiLz4NCjxwYXRoIGQ9Ik04OC4zNjYsMzI4LjkzYy0xLjg2OS0xLjg2LTQuNDM5LTIuOTMtNy4wNzktMi45M2MtMi42MzEsMC01LjIsMS4wNy03LjA3LDIuOTNjLTEuODYsMS44Ni0yLjkzLDQuNDQtMi45Myw3LjA3DQoJczEuMDY5LDUuMjEsMi45Myw3LjA3YzEuODcsMS44Niw0LjQzOSwyLjkzLDcuMDcsMi45M2MyLjY0LDAsNS4yMS0xLjA3LDcuMDc5LTIuOTNjMS44Ni0xLjg2LDIuOTMxLTQuNDQsMi45MzEtNy4wNw0KCVM5MC4yMjcsMzMwLjc5LDg4LjM2NiwzMjguOTN6Ii8+DQo8cGF0aCBkPSJNODEuMjg3LDM4MmMtMi42MzEsMC01LjIsMS4wNy03LjA3LDIuOTNjLTEuODYsMS44Ni0yLjkzLDQuNDQtMi45Myw3LjA3czEuMDY5LDUuMjEsMi45Myw3LjA3DQoJYzEuODU5LDEuODYsNC40MzksMi45Myw3LjA3LDIuOTNjMi42NCwwLDUuMjItMS4wNyw3LjA3OS0yLjkzYzEuODYtMS44NiwyLjkzMS00LjQ0LDIuOTMxLTcuMDdzLTEuMDctNS4yMS0yLjkzMS03LjA3DQoJQzg2LjQ5NywzODMuMDcsODMuOTI3LDM4Miw4MS4yODcsMzgyeiIvPg0KPHBhdGggZD0iTTI2Ni4wMDcsMjcwaC0xNDJjLTUuNTIyLDAtMTAsNC40NzctMTAsMTBzNC40NzgsMTAsMTAsMTBoMTQyYzUuNTIyLDAsMTAtNC40NzcsMTAtMTBTMjcxLjUyOSwyNzAsMjY2LjAwNywyNzB6Ii8+DQo8cGF0aCBkPSJNNDkxLjAwMiwxMzAuMzJjLTkuNzE1LTUuNjA5LTIxLjAzMy03LjA5OS0zMS44NzEtNC4xOTZjLTEwLjgzNiwyLjkwNC0xOS44OTQsOS44NTQtMjUuNTAyLDE5LjU2OUwzMDcuNzg3LDM2My42NTYNCgljLTAuNjg5LDEuMTk1LTEuMTI1LDIuNTItMS4yNzgsMy44OTFsLTguODU4LDc5LjM0NGMtMC40NCwzLjk0OCwxLjQ5OCw3Ljc4Myw0LjkzOCw5Ljc3YzEuNTUzLDAuODk2LDMuMjc4LDEuMzQsNC45OTksMS4zNA0KCWMyLjA5MiwwLDQuMTc2LTAuNjU1LDUuOTMxLTEuOTQ4bDY0LjI4NC00Ny4zNDRjMS4xMTEtMC44MTgsMi4wNDEtMS44NTcsMi43My0zLjA1MmwxMjUuODQxLTIxNy45NjMNCglDNTE3Ljk1NCwxNjcuNjM4LDUxMS4wNTgsMTQxLjksNDkxLjAwMiwxMzAuMzJ6IE0zMjQuNjg5LDM4NC45NjJsMjguOTQyLDE2LjcxbC0zMy41NjgsMjQuNzIyTDMyNC42ODksMzg0Ljk2MnogTTM2OC4yMTMsMzg2Ljk5Ng0KCWwtMzguMTA1LTIybDEwMC45ODUtMTc0LjkxbDM4LjEwNSwyMkwzNjguMjEzLDM4Ni45OTZ6IE00ODkuMDU0LDE3Ny42OTNsLTkuODU3LDE3LjA3M2wtMzguMTA1LTIybDkuODU3LTE3LjA3Mw0KCWMyLjkzOC01LjA4OSw3LjY4Mi04LjcyOSwxMy4zNTgtMTAuMjVjNS42NzgtMS41MjIsMTEuNjA2LTAuNzQsMTYuNjk0LDIuMTk4YzUuMDg5LDIuOTM4LDguNzI5LDcuNjgyLDEwLjI1LDEzLjM1OA0KCUM0OTIuNzcyLDE2Ni42NzUsNDkxLjk5MiwxNzIuNjA0LDQ4OS4wNTQsMTc3LjY5M3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
-        type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon"
+  href="./assets/images/logo.ico">
 
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container clearfix">
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.png"
-                alt="profile image" />
-            <div class="profile-content float-left">
-                <h1 class="name">Andika Mardianto</h1>
-                <h2 class="desc">Mobile Developer</h2>
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://www.instagram.com/andika.mar"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="https://id.linkedin.com/in/andika-mardianto-58a595178"><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/andikamar"><i
-                                class="fab fa-github-alt"></i></a></li>
-                </ul>
-            </div>
-            <!--//profile-->
+  <main>
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.png" alt="Andika Mardianto" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Andika Mardianto">Andika Mardianto</h1>
+
+          <p class="title">Mobile developer</p>
         </div>
-        <!--//container-->
-    </header>
-    <!--//header-->
 
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Hey all, i'm dika</p>
-                            <p>A passionate Mobile Developer 🚀 having an experience of building Mobile applications with Java / Kotlin / React Native / Flutter and some other cool libraries and frameworks.</p>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
-                            <div class="item featured text-center">
+      </div>
 
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a0/fc/10/a0fc10ff-b47b-f62e-1244-b9727e4f848e/AppIcon-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp">
-                                        <img class="img-fluid project-image rounded shadow-sm"
-                                            src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a0/fc/10/a0fc10ff-b47b-f62e-1244-b9727e4f848e/AppIcon-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
+      <div class="sidebar-info_more">
 
-                                <h3 class="title mb-3"><a href="#" onclick="DetectMobilePhoneBsatu()" target="_blank">BeritaSatu</a>
-                                </h3>
+        <div class="separator"></div>
 
-                                <div class="desc text-left">
-                                    <p>BeritaSatu.com is an Indonesian news app that provides the latest, most in-depth, accurate, reliable and up-to-date news stories.</p>
-                                </div>
-                                <!--//desc-->
+        <ul class="contacts-list">
 
-                            </div>
-                             <!--//item-->
-                             <hr class="divider" />
-                             <div class="item row">
-                                 <a class="col-md-4 col-12" href="assets/images/projects/styles.png">
-                                     <img class="img-fluid project-image rounded shadow-sm"
-                                         src="assets/images/projects/styles.png" alt="project name" />
-                                 </a>
-                                 <div class="desc col-md-8 col-12">
-                                     <h3 class="title mb-3"><a href="#" onclick="DetectMobilePhone()" target="_blank">Styles</a>
-                                     </h3>
-                                     <p class="mb-2">STYLES is the first reward application in Indonesia that is integrated with more than 50 Lippo Malls in 40 cities in Indonesia.
-                                        This application aims to give appreciation to loyal Lippo Malls Indonesia customers to get Styles points by shopping at Lippo Malls and exchanging points that have been collected for various vouchers, attractive merchandise and exclusive discounts from tenants and Lippo Malls partners.</p>
-                                </div>
-                                 <!--//desc-->
-                             </div>
-                            <!--//item-->
-                             <hr class="divider" />
-                             <div class="item row">
-                                 <a class="col-md-4 col-12" href="assets/images/projects/sidompul.webp">
-                                     <img class="img-fluid project-image rounded shadow-sm"
-                                         src="assets/images/projects/sidompul.webp" alt="project name" />
-                                 </a>
-                                 <div class="desc col-md-8 col-12">
-                                     <h3 class="title"><a href="https://play.google.com/store/apps/details?id=com.toko.xl&hl=en&gl=US" target="_blank">SiDOMPUL</a></h3>
-                                     <p class="mb-2">XL Axiata retailer application for Dompul users, to sell credit, data & claim prizes</p>
-                                 </div>
-                                 <!--//desc-->
-                             </div>
-                            <!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/axisnet.webp">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/axisnet.webp" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://play.google.com/store/apps/details?id=com.axis.net&hl=en&gl=US" target="_blank">AXISnet</a></h3>
-                                    <p class="mb-2">The official personal service application for AXIS customers to check internet quota, check credit, and other services.</p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-                             <hr class="divider" />
-                             <div class="item row">
-                                 <a class="col-md-4 col-12" href="assets/images/projects/sinaken.PNG">
-                                     <img class="img-fluid project-image rounded shadow-sm"
-                                         src="assets/images/projects/sinaken.PNG" alt="project name" />
-                                 </a>
-                                 <div class="desc col-md-8 col-12">
-                                     <h3 class="title"><a href="https://sinaken.ajs.sch.id" target="_blank">Sinaken -
-                                        Lecturer Performance System</a></h3>
-                                     <p class="mb-2">Sinaken is a web application to make it easier for lecturers and universities to
-                                        recap reports, the sinaken application that i created to complete my
-                                        undergraduate studies at UNIS Tangerang.</p>
-                                 </div>
-                                 <!--//desc-->
-                             </div>
-                             <!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/asl.JPG">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/asl.JPG" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://aslproperti.com/" target="_blank">Asl Property -
-                                            Marketplace Property</a></h3>
-                                    <p class="mb-2">Asl Property is a web marketplace that provides a system to bring
-                                        together sellers and buyers on a cash on delivery basis</p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
+          <li class="contact-item">
 
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/mobileasl.jpg">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/mobileasl.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Asl Property - Mobile App Android</a></h3>
-                                    <p class="mb-2">Real estate marketplace application.
-
-                                    <p> <a
-                                            href="https://drive.google.com/uc?export=download&id=1BFECXmbPCgnE4l9sYNQJLSbXoWAV9w-L">Download
-                                            Here</a> </p>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/manga.jpg">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/manga.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Manga Comics - Mobile App Android</a></h3>
-                                    <p class="mb-2">Manga Comics is an application to read manga comics online, so make
-                                        sure you have an internet connection.
-                                        Manga comics are made using the Java language and using FAN (Fast Android
-                                        Networking) as the Rest APIs.</p>
-                                    <p>
-                                        <a
-                                            href="https://drive.google.com/uc?export=download&id=1PSLm0cvARl_8a8Jhwws2C51Fy65kDJ2A">Download
-                                            Here</a>
-                                    </p>
-
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/alquran.jpg">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/alquran.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Alquran App - Mobile App Android</a></h3>
-                                    <p class="mb-2">Alquran App is an application to read al-quran offline, this
-                                        application is made using the Java language and uses cardview, recylerview,
-                                        butterknife as library dependencies.</p>
-                                    <p>
-                                        <a
-                                            href="https://drive.google.com/uc?export=download&id=1GiRxOlA_cnU0uvis-mcEOMELjrTBC_kS">Download
-                                            Here</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/masjid.jpg">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="assets/images/projects/masjid.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Nearby Mosque - Mobile App Android</a></h3>
-                                    <p class="mb-2"> Nearby Mosque Search Application Using Google API.</p>
-                                    <p>
-                                        <a
-                                            href="https://drive.google.com/uc?export=download&id=1_YMfpcC65mVNNjQC6Bv4OxQlWiMVx6GH">Download
-                                            Here</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Panongan
-                                    Kabupaten Tangerang</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                        href="mailto:andikamardianto07@gmail.com">andikamardianto07@gmail.com</a></li>
-                            </ul>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//aside-->
 
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
 
-                            <div class="skillset">
-                                <div class="item">
-                                    <h3 class="level-title">Flutter<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."></span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">React Native<span class="level-label" data-toggle="tooltip"
-                                            data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."></span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="100%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <div class="item">
-                                    <h3 class="level-title">Kotlin<span class="level-label" data-toggle="tooltip"
-                                            data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."></span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip"
-                                            data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."></span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Android Studio &amp; Rest Api, Google Maps,
-                                        Firebase, Realm, MySql &amp; Third Party<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."></span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">PHP, HTML, Javascript, jQuery<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."></span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-                            </div>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> S.Kom Informatics Engineering
-                                </h3>
-                                <h4 class="university">University Islamic Sheikh Yusuf <span
-                                        class="year">(2016-2020)</span>
-                                </h4>
-                            </div>
-                            <!--//item-->
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
+              <a href="mailto:andikamardianto07@gmail.com" class="contact-link">andikamardianto07@gmail.com</a>
             </div>
-            <!--//secondary-->
-        </div>
-        <!--//row-->
+
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kabupaten Tangerang Banten, Indonesia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/andika.mar" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://id.linkedin.com/in/andika-mardianto-58a595178" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/andikamar" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            A passionate Mobile Developer 🚀 having an experience of building Mobile applications with Java / Kotlin / React Native / Flutter and some other cool libraries and frameworks.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+
+
+      </article>
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Islamic Sheikh Yusuf</h4>
+
+              <span>2016 — 2020</span>
+
+              <p class="timeline-text">
+                Informatics Engineering
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mobile Developer</h4>
+
+              <span>2024 — Present</span>
+
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mobile Application Developer</h4>
+
+              <span>2022 — 2024</span>
+
+          
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Android Developer</h4>
+
+              <span>2021 — 2022</span>
+
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React Native</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Kotlin</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Android Studio, Visual Studio Code, Xcode, Postman, Figma, Trello, Jira & Rest Api, Google Maps, Firebase, Realm, MySql & Third Party</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PHP, HTML, Javascript, jQuery</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+              <a href="#" onclick="DetectMobilePhoneBsatu()">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a0/fc/10/a0fc10ff-b47b-f62e-1244-b9727e4f848e/AppIcon-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp" alt="beritasatu" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BeritaSatu</h3>
+
+                <p class="project-category">Applications</p>
+
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  BeritaSatu.com is an Indonesian news app that provides the latest, most in-depth, accurate, reliable and up-to-date news stories.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="#" onclick="DetectMobilePhone()">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c0/de/aa/c0deaa7c-de84-4774-d299-e57909cf06a6/AppIcon-Default-0-0-1x_U007emarketing-0-8-0-85-220.png/492x0w.webp" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Styles</h3>
+
+                <p class="project-category">Applications</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  STYLES is the first reward application in Indonesia that is integrated with more than 50 Lippo Malls in 40 cities in Indonesia.
+                                        This application aims to give appreciation to loyal Lippo Malls Indonesia customers to get Styles points by shopping at Lippo Malls and exchanging points that have been collected for various vouchers, attractive merchandise and exclusive discounts from tenants and Lippo Malls partners.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://play.google.com/store/apps/details?id=com.toko.xl&hl=en&gl=US&pli=1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sidompul.webp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SiDOMPUL</h3>
+
+                <p class="project-category">Applications</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  XL Axiata retailer application for Dompul users, to sell credit, data & claim prizes
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://play.google.com/store/apps/details?id=com.axis.net&hl=en&gl=US">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/axisnet.webp" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AXISnet</h3>
+
+                <p class="project-category">Applications</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  The official personal service application for AXIS customers to check internet quota, check credit, and other services.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://sinaken.ajs.sch.id">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sinaken.PNG" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sinaken - Lecturer Performance System</h3>
+
+                <p class="project-category">Web development</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  Sinaken is a web application to make it easier for lecturers and universities to recap reports, the sinaken application that i created to complete my undergraduate studies at UNIS Tangerang.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://aslproperti.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/asl.JPG" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Asl Property - Marketplace Property</h3>
+
+                <p class="project-category">Web development</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  Asl Property is a web marketplace that provides a system to bring together sellers and buyers on a cash on delivery basis
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://drive.google.com/uc?export=download&id=1BFECXmbPCgnE4l9sYNQJLSbXoWAV9w-L">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mobileasl.jpg" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Asl Property - Mobile App Android</h3>
+
+                <p class="project-category">Applications</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  Real estate marketplace application.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://drive.google.com/uc?export=download&id=1PSLm0cvARl_8a8Jhwws2C51Fy65kDJ2A">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/manga.jpg" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Manga Comics - Mobile App Android</h3>
+
+                <p class="project-category">Applications</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  Manga Comics is an application to read manga comics online, so make sure you have an internet connection. Manga comics are made using the Java language and using FAN (Fast Android Networking) as the Rest APIs.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://drive.google.com/uc?export=download&id=1GiRxOlA_cnU0uvis-mcEOMELjrTBC_kS">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/alquran.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Alquran App - Mobile App Android</h3>
+
+                <p class="project-category">Applications</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  Alquran App is an application to read al-quran offline, this application is made using the Java language and uses cardview, recylerview, butterknife as library dependencies.
+                </p>
+
+              </a>
+            </li>
+            <li class="project-item  active">
+              <a href="https://drive.google.com/uc?export=download&id=1_YMfpcC65mVNNjQC6Bv4OxQlWiMVx6GH">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/masjid.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nearby Mosque - Mobile App Android</h3>
+
+                <p class="project-category">Applications</p>
+                <p class="timeline-text" style="margin-top: 20px; margin-left: 10px;">
+                  Nearby Mosque Search Application Using Google API.
+                </p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
     </div>
-    <!--//masonry-->
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright"><a href="https://andikamar.github.io/portofolio/" target="_blank">2024 | andikamar</a></small>
-        </div>
-        <!--//container-->
-    </footer>
-    <!--//footer-->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-        function DetectMobilePhoneBsatu(){
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        
-        if (userAgent.includes("Android")) {
-            window.location.replace("https://play.google.com/store/apps/details?id=com.beritasatu");
-        } else if (userAgent.includes("iPhone")) {
-            window.location.replace("https://apps.apple.com/id/app/beritasatu/id726879438");
-        }
-        }
-        function DetectMobilePhone(){
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        
-        if (userAgent.includes("Android")) {
-            window.location.replace("https://play.google.com/store/apps/details?id=com.lippomalls.styles");
-        } else if (userAgent.includes("iPhone")) {
-            window.location.replace("https://apps.apple.com/id/app/styles-lippo-malls/id1450646539");
-        }
-        }
-    </script>
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
