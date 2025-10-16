@@ -37,6 +37,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+function DetectMobilePhoneID(){
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+  if (userAgent.includes("Android")) {
+      window.location.replace("https://play.google.com/store/apps/details?id=com.bsm.id");
+  } else if (userAgent.includes("iPhone")) {
+      window.location.replace("https://apps.apple.com/us/app/investor-daily/id1492034848");
+  }
+  }
 function DetectMobilePhoneBsatu(){
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
   
